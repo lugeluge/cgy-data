@@ -96,25 +96,25 @@ bool InitLinkList2(LinkList& L2)//初始化带头结点的单链表
 //	free(q);
 //}
 //
-////删除指定节点：通过找到这个节点p的下一个节点q，把下一个节点q的值覆给p。
-//void deteleNodep(LinkList& L, int i)//删除10这个节点
-//{
-//	LNode* p,*q;
-//	p = L;
-//	while (p != NULL)
-//	{
-//		if (p->data == 10)
-//		{
-//			q = p->next;
-//			p->data = p ->next->data;
-//			p->next = q->next;
-//			free(q);
-//		}
-//		p = p->next;
-//	}
-//	
-//
-//}
+//删除指定节点：通过找到这个节点p的下一个节点q，把下一个节点q的值覆给p。
+void deteleNodep(LinkList& L, int i)//删除10这个节点
+{
+	LNode* p,*q;
+	p = L;
+	while (p != NULL)
+	{
+		if (p->data == 10)
+		{
+			q = p->next;
+			p->data = p ->next->data;
+			p->next = q->next;
+			free(q);
+		}
+		p = p->next;
+	}
+	
+
+}
 //
 //输出链表
 void printList(LinkList& L)
