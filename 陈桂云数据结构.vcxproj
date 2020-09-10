@@ -88,6 +88,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -117,6 +118,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="链式-队列.cpp" />
+    <ClCompile Include="链栈.cpp" />
+    <ClCompile Include="顺序-队列.cpp" />
+    <ClCompile Include="顺序栈.cpp" />
     <ClCompile Include="线性表-单链表.cpp" />
+    <ClCompile Include="线性表-双链表.cpp" />
+    <ClCompile Include="线性表-循环单链表.cpp" />
     <ClCompile Include="线性表-顺序表.cpp" />
     <ClCompile Include="下标引用指针变量.cpp" />
     <ClCompile Include="二维数组.cpp" />
