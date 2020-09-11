@@ -21,7 +21,7 @@ bool Push(sqStack& s,int e)
 {
 	if (s.top == MaxSize - 1)//ÅÐ¶ÏÊÇ·ñÕ»Âú
 		return false;
-	s.top = s.top++;
+	s.top = s.top++; 
 	s.data[s.top] = e;
 }
 bool Pop(sqStack& s, int &e)

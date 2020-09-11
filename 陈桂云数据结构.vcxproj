@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="栈的应用-括号匹配.cpp" />
     <ClCompile Include="链式-队列.cpp" />
     <ClCompile Include="链栈.cpp" />
     <ClCompile Include="顺序-队列.cpp" />
