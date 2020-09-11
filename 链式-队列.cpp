@@ -78,7 +78,7 @@ bool deQueue(LinkQueue& Q, int &x)
 	free(s);
 	return true;*/
 }
-int main()
+int main15()
 {
 	LinkQueue Q;
 	InitQueue(Q);
@@ -90,6 +90,7 @@ int main()
 	int x;
 	deQueue(Q, x);
 	printf("%d", x);
+	return 0;
 
 
 
