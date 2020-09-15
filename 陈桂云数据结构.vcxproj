@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="串的顺序存储.cpp" />
+    <ClCompile Include="栈的应用-后缀表达式计算.cpp" />
     <ClCompile Include="栈的应用-括号匹配.cpp" />
     <ClCompile Include="链式-队列.cpp" />
     <ClCompile Include="链栈.cpp" />

@@ -19,6 +19,7 @@ bool Push(sqStack& s,char x)
 		s.top = s.top++;
 		s.data[s.top] = x;
 }
+//出栈
 bool pop(sqStack& s, char& e)
 {
 	if (s.top == -1)
@@ -30,7 +31,7 @@ bool pop(sqStack& s, char& e)
 
 bool empty(sqStack &s)
 {
-	if (s.top == -1)
+	if (s.top == -1)//栈空
 		return true;
 	else 
 		return false;
@@ -42,14 +43,15 @@ bool Matchsign(sqStack& s, const char str[],int len)
 		char t = str[i];
 		if (str[i] == '[' || str[i] == '{' || str[i] == '(')
 		{
+			//如果是左边的符号就是进栈
 			Push(s,str[i]);
 		}
 		else
 		{
 			if(empty(s))
 			return false;//不是左括号且栈为空，则返回false
-			char e;
-			pop(s, e);
+			char e;//[
+			pop(s, e);//栈顶元素出栈
 			if (str[i] == ')'&& e == '('  || str[i] == ']' && e == '[' || str[i] == '}' && e == '{')
 			{
 				continue;
@@ -91,11 +93,11 @@ bool Matchsign1(sqStack& s, const char str[], int len)
 	}
 	return empty(s);
 }
-int main()
+int main16()
 {
 	sqStack s;
 	InitStack(s);
-	const char str[] = "{[(dfsdf)]}";
+	const char str[] = "{[(dfsdf)]}";//{{(})}  {{{()}}}
 	int length = strlen(str);
 
 	//Matchsign(s, str, length);
@@ -103,5 +105,7 @@ int main()
 		printf("成功");
 	else
 		printf("失败");
+
+	return 0;
 
 }

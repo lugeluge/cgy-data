@@ -60,6 +60,12 @@
     <ClCompile Include="栈的应用-括号匹配.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="栈的应用-后缀表达式计算.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="串的顺序存储.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h">
