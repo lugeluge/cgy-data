@@ -66,6 +66,9 @@
     <ClCompile Include="串的顺序存储.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="KMP算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test.h">
